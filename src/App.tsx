@@ -1,9 +1,9 @@
-import { ThemeProvider } from "@/components/theme-provider";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Layout from "@/Layout";
-import Home from "@/pages/Home";
-import About from "@/pages/About";
-import Login from "@/pages/Login";
+import { ThemeProvider } from '@/components/theme-provider'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Layout from '@/Layout'
+import Home from '@/pages/Home'
+import About from '@/pages/About'
+import Login from '@/pages/Login'
 
 function App() {
   return (
@@ -24,8 +24,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
-
+export default App
