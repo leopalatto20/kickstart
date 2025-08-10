@@ -1,24 +1,24 @@
 import { Button } from "@/components/ui/button";
-import { Ghost, Home as HomeIcon } from "lucide-react";
+import { LogIn, Info, Home as HomeIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ModeToggle } from "@/components/mode-toggle";
 
 const navItems = [
-	{ name: "Home", href: "/", icon: <HomeIcon className="h-4 w-4 text-gray-500" /> },
-	{ name: "About", href: "/about", icon: <Ghost className="h-4 w-4 text-gray-500" /> },
+	{ name: "Home", href: "/home", icon: <HomeIcon className="h-4 w-4 text-gray-500" /> },
+	{ name: "About", href: "/about", icon: <Info className="h-4 w-4 text-gray-500" /> },
 ];
 
 const outputItem = {
-	name: "Output",
-	href: "/output",
-	icon: <Ghost className="h-4 w-4 text-gray-500" />,
+	name: "Login",
+	href: "/",
+	icon: <LogIn className="h-4 w-4 text-gray-500" />,
 };
 
 export default function MainNav() {
 	return (
 		<div className="hidden md:flex items-center gap-4 w-full justify-between">
 			<Link to="/" className="flex items-center gap-2">
-				<div className="bg-gray-300 w-8 h-8 rounded" /> {/* Logo placeholder */}
+				<div className="bg-gray-300 w-8 h-8 rounded" />
 				<span className="text-lg font-bold">MyApp</span>
 			</Link>
 

@@ -6,18 +6,18 @@ import {
 	DropdownMenuItem
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { Ghost, Info, Home as HomeIcon, Menu as MenuIcon } from "lucide-react";
+import { LogIn, Info, Home as HomeIcon, Menu as MenuIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
-	{ name: "Home", href: "/", icon: <HomeIcon className="h-4 w-4 text-gray-500" /> },
+	{ name: "Home", href: "/home", icon: <HomeIcon className="h-4 w-4 text-gray-500" /> },
 	{ name: "About", href: "/about", icon: <Info className="h-4 w-4 text-gray-500" /> },
 ];
 
 const outputItem = {
-	name: "Output",
-	href: "/output",
-	icon: <Ghost className="h-4 w-4 text-gray-500" />,
+	name: "Login",
+	href: "/login",
+	icon: <LogIn className="h-4 w-4 text-gray-500" />,
 }
 
 
